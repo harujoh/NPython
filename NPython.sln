@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPython", "NPython\NPython.csproj", "{F5C08027-42E0-4B42-9193-CBDC7092961F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPythonSample", "NPythonSample\NPythonSample.csproj", "{417D4A6F-9D2E-49DC-BDB2-7817A1E92979}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F5C08027-42E0-4B42-9193-CBDC7092961F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5C08027-42E0-4B42-9193-CBDC7092961F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5C08027-42E0-4B42-9193-CBDC7092961F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{417D4A6F-9D2E-49DC-BDB2-7817A1E92979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{417D4A6F-9D2E-49DC-BDB2-7817A1E92979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{417D4A6F-9D2E-49DC-BDB2-7817A1E92979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{417D4A6F-9D2E-49DC-BDB2-7817A1E92979}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
