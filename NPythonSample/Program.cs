@@ -7,8 +7,9 @@ namespace NPythonSample
     {
         static void Main(string[] args)
         {
-            //python.exeの場所を指定
-            //Pythonの文字出力が不要な場合はStringReceivedを省略可能
+            //第一引数 : python.exeのパスを指定
+            //第二引数 : Pythonの文字出力を受け取る関数を指定（省略可能）
+            //第三引数 : mainが書かれたPythonコードを指定（省略可能）
             NPython nPython = new NPython(@"C:\Python27\python.exe", StringReceived);
 
             int[,] array =

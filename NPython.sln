@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPython", "NPython\NPython.csproj", "{F5C08027-42E0-4B42-9193-CBDC7092961F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPythonSample", "NPythonSample\NPythonSample.csproj", "{417D4A6F-9D2E-49DC-BDB2-7817A1E92979}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPython", "NPython\NPython.csproj", "{F5C08027-42E0-4B42-9193-CBDC7092961F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
