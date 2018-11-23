@@ -1,9 +1,9 @@
 # NPython
-C#からPythonとデータのやり取りをする
+C#からPythonとデータのやり取りをするサンプルです
 
 ## できること
 - PythonにC#のArrayを送信
-- C#からPythonのndArrayを取得
+- C#からPython内で宣言したndArrayを取得
 
 ## 原理
 - C#からPythonを対話モードで起動
