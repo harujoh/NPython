@@ -106,7 +106,6 @@ namespace NPythonCore
             t = null;
             shape = null;
 
-            //if (reader.ReadChar() != 63) return false;
             if (reader.ReadChar() != 147) return false;
             if (reader.ReadChar() != 'N') return false;
             if (reader.ReadChar() != 'U') return false;
@@ -271,6 +270,7 @@ namespace NPythonCore
             if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
             {
                 MethodInfo setter = type.GetMethod("op_Implicit", new[] { inputType });
+
                 return (T)setter.Invoke(null, new object[] { value });
             }
 
@@ -398,31 +398,31 @@ namespace NPythonCore
         {
             type = array.GetType().GetElementType();
 
-            bytes = 1;
-
             if (type == typeof(String))
             {
+                bytes = 1;
+
                 foreach (String s in array)
                 {
                     if (s.Length > bytes)
+                    {
                         bytes = s.Length;
+                    }
                 }
-            }
-            else if (type == typeof(bool))
-            {
-                bytes = 1;
-            }
-            else
-            {
-                bytes = Marshal.SizeOf(type);
+
+                return "|S" + bytes;
             }
 
             if (type == typeof(bool))
             {
+                bytes = 1;
+
                 return "|b1";
             }
 
-            if (type == typeof(Byte))
+            bytes = Marshal.SizeOf(type);
+
+            if (type == typeof(SByte))
             {
                 return "|i1";
             }
@@ -465,11 +465,6 @@ namespace NPythonCore
             if (type == typeof(Double))
             {
                 return "<f8";
-            }
-
-            if (type == typeof(String))
-            {
-                return "|S" + bytes;
             }
 
             throw new NotSupportedException();
