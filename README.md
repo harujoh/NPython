@@ -1,5 +1,5 @@
 # NPython
-C#からPythonとデータをやり取りする
+C#からPythonとデータのやり取りをする
 
 ## できること
 - PythonにC#のArrayを送信
