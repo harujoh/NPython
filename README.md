@@ -5,7 +5,7 @@ C#からPythonとデータのやり取りをするサンプルです
 - PythonにC#のArrayを送信
 - C#からPythonのndArrayを取得
 
-## 原理
+## 動作原理
 - C#からPythonを対話モードで起動
 - 起動したPythonの出力をStandardOutputを介して取得
 - データのやり取りはnpyを文字列として送受信
