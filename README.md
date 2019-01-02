@@ -1,5 +1,6 @@
 # NPython
-C#からPythonとデータのやり取りをするサンプルです
+NPythonは開発を終了し[NConstrictor](https://github.com/harujoh/NConstrictor)へ移行しています。
+NConstrictorは値のコンバートを行わず、標準出力を介さずにメモリを直接やり取りする手法を採っています。
 
 ## できること
 - PythonにC#のArrayを送信
@@ -9,7 +10,3 @@ C#からPythonとデータのやり取りをするサンプルです
 - C#からPythonを対話モードで起動
 - 起動したPythonの出力をStandardOutputを介して取得
 - データのやり取りはnpyを文字列として送受信
-
-## メリット
-- Pythonの全機能をC#を介して使用できる
-- Pythonライブラリも機能の制限を受けないためGPU等による高速な処理を期待できる
