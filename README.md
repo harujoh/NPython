@@ -1,5 +1,6 @@
 # NPython
 NPythonは開発を終了し[NConstrictor](https://github.com/harujoh/NConstrictor)へ移行しています。
+
 NConstrictorは値のコンバートを行わず、標準出力を介さずにメモリを直接やり取りする手法を採っています。
 
 ## できること
